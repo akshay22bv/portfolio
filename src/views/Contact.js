@@ -8,8 +8,8 @@ const Contact = () => {
     <div name="contact" className="w-full lg:h-screen bg-slate-100">
       <div className="bg-slate-100 m-auto px-[15%] sm:px-[20%] flex flex-col justify-center items-center w-full h-full">
         <div className="max-w-[1000px] w-full grid grid-cols-2 gap-8">
-          <div className=" pb-8 md:text-right">
-            <p className="text-4xl font-vol inline font-semibold border-b-4 border-red-500">
+          <div className="pb-8  md:text-right">
+            <p className="inline text-4xl font-semibold border-b-4 border-red-500 font-vol">
               Contact
             </p>
           </div>
@@ -21,19 +21,19 @@ const Contact = () => {
             <p className="text-[20px] flex md:flex-row md:justify-end items-center font-semibold">
               Address &nbsp; <ImLocation />
             </p>
-            <p className="flex md:justify-end items-center p-1">
+            <p className="flex items-center p-1 md:justify-end">
               Banashankari 3rd Stage, Katriguppe, Bengaluru - 560085
             </p>
             <p className="text-[20px] flex md:justify-end items-center font-semibold">
               Phone &nbsp; <IoIosCall />
             </p>
-            <p className="flex md:justify-end items-center p-1">
+            <p className="flex items-center p-1 md:justify-end">
               +91 9686721221
             </p>
             <p className="text-[20px] flex md:justify-end items-center font-semibold">
               Email &nbsp; <BiLogoGmail />
             </p>
-            <p className="flex md:justify-end items-center p-1">
+            <p className="flex items-center p-1 md:justify-end">
               Akshay22bv@gmail.com
             </p>
           </div>
@@ -46,7 +46,7 @@ const Contact = () => {
             >
               <label className="py-1">Name</label>
               <input
-                className="bg-white p-2 shadow"
+                className="p-2 bg-white shadow"
                 type="text"
                 required
                 placeholder="Your Name"
@@ -55,7 +55,7 @@ const Contact = () => {
               <label className="py-1">Email</label>
               <input
                 required
-                className="bg-white p-2 shadow"
+                className="p-2 bg-white shadow"
                 type="text"
                 placeholder="example@gmail.com"
                 name="email"
@@ -63,14 +63,14 @@ const Contact = () => {
               <label className="py-1">Message</label>
               <textarea
                 required
-                className="bg-white p-2 shadow h-32"
+                className="h-32 p-2 bg-white shadow"
                 type="textarea"
                 placeholder="Message"
                 name="message"
               ></textarea>
               <button
                 type="submit"
-                className="my-4 flex justify-center items-center group px-3 py-3 bg-red-500 text-white hover:bg-red-600 rounded"
+                className="flex items-center justify-center px-3 py-3 my-4 text-white bg-red-500 rounded group hover:bg-red-600"
               >
                 <p>Submit</p>
               </button>

@@ -24,20 +24,20 @@ const Skills = () => {
     <div name="skills" className="w-full lg:h-screen">
       <div className="bg-slate-100 flex flex-col px-[15%] py-[10%] items-center w-full h-full">
         <div className=" max-w-[1000px] w-full grid grid-cols-2 gap-8">
-          <div className="md:text-right pb-8">
-            <p className="text-2xl sm:text-4xl font-vol inline font-semibold border-b-4 border-red-500">
+          <div className="pb-8 md:text-right">
+            <p className="inline text-2xl font-semibold border-b-4 border-red-500 sm:text-4xl font-vol">
               {!isChecked ? "Skills" : "Tools"}
             </p>
           </div>
           <div className="">
-            <label className="toggle flex items-center cursor-pointer">
+            <label className="flex items-center cursor-pointer toggle">
               <input
                 type="checkbox"
                 className="hidden"
                 checked={isChecked}
                 onChange={handleToggle}
               />
-              <div className="slider rounded-full w-14 h-7 p-1 bg-gray-300 transition duration-300 ease-in-out">
+              <div className="p-1 transition duration-300 ease-in-out bg-gray-300 rounded-full slider w-14 h-7">
                 <div
                   className={`rounded-full w-5 h-5 bg-white shadow-md transform transition duration-300 ease-in-out ${
                     isChecked ? "translate-x-6" : "translate-x-1"
@@ -52,12 +52,12 @@ const Skills = () => {
         </div>
 
         <div className="max-w-[1000px] w-full  grid md:grid-cols-2 gap-8">
-          <div className="md:text-right pb-8 ">
+          <div className="pb-8 md:text-right ">
             <p className="text-2xl sm:text-4xl">
               These are technologies used in my experiance
             </p>
           </div>
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 grid-cols-3 py-4 items-center gap-4">
+          <div className="grid items-center grid-cols-3 gap-4 py-4 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
             {!isChecked ? (
               <>
                 <LogoContainer logo={HTML} text={"HTML"} />
@@ -91,7 +91,11 @@ export default Skills;
 const LogoContainer = ({ logo, text }) => {
   return (
     <div className="w-[80px] h-full  bg-white overflow-hidden whitespace-nowrap font-semibold font-sans shadow-md hover:scale-105 duration-300 text-center rounded-md">
-      <img className="w-[40px] h-[40px] pt-2 mx-auto" src={logo} alt=""></img>
+      <img
+        className="w-[40px] h-[40px] pt-2 mx-auto animate-pulse"
+        src={logo}
+        alt=""
+      ></img>
       <p className="my-1 text-[10px] md:text-sm">{text}</p>
     </div>
   );
