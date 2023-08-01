@@ -20,5 +20,13 @@ export const data = [
     image: Payment,
 
     url: "https://64b954e0142fcf166b93677b--akshay-razorpay.netlify.app/",
+<<<<<<< Updated upstream
+=======
+  },
+  {
+    title: "Cloth E-commerce Website",
+    image: Dress,
+    url: "https://cloth-seven.vercel.app/",
+>>>>>>> Stashed changes
   },
 ];
