@@ -20,11 +20,14 @@ export const data = [
     title: "Razor Payment",
     image: Payment,
 
-    url: "https://cloth-seven.vercel.app/",
+    url: "https://64b954e0142fcf166b93677b--akshay-razorpay.netlify.app/",
+
+
   },
   {
     title: "Cloth E-commerce Website",
     image: Dress,
     url: "https://cloth-seven.vercel.app/",
+
   },
 ];
